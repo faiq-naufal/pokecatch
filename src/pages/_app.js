@@ -6,7 +6,7 @@ import Theme from "../containers/templates/Theme/Theme";
 import { PokemonProvider } from "../hooks/useMyPokemon";
 import { client } from "../config/ApolloClient";
 import "../lib/css/nprogress.css";
-import "@fontsource/VT323";
+import "@fontsource/vt323/400.css";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();

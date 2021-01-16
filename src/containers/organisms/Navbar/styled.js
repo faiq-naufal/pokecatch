@@ -55,9 +55,10 @@ export const StyledNavbar = styled.nav`
     }
 
     .link__icon {
-      display: inline-flex;
       max-width: 30px;
       max-height: 30px;
+      display: inline-flex;
+      justify-content: center;
 
       @media (min-width: 768px) {
         max-width: 36px;
@@ -65,8 +66,8 @@ export const StyledNavbar = styled.nav`
       }
 
       img {
-        width: 100%;
-        height: auto;
+        width: auto;
+        height: 100%;
       }
     }
 
