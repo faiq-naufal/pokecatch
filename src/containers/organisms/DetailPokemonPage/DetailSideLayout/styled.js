@@ -1,5 +1,7 @@
+//libraries
 import styled from "@emotion/styled";
 
+//styled component with emotion
 export const StyledDetailSideLayout = styled.div`
   max-width: 260px;
   margin-left: auto;

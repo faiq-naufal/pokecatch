@@ -1,7 +1,13 @@
-import { StyledErrorMessage } from "./styled";
-import ContainerWrapper from "../ContainerWrapper/ContainerWrapper";
+//libraries
 import PropTypes from "prop-types";
 
+//components
+import ContainerWrapper from "../ContainerWrapper/ContainerWrapper";
+
+//styled component with emotion
+import { StyledErrorMessage } from "./styled";
+
+//this is component for displaying error message
 export default function ErrorMessage({ children }) {
   return (
     <StyledErrorMessage>
@@ -10,6 +16,7 @@ export default function ErrorMessage({ children }) {
   );
 }
 
+//type checking
 ErrorMessage.propTypes = {
   children: PropTypes.node.isRequired,
 };

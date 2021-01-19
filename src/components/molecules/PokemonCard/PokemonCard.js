@@ -1,13 +1,19 @@
+//libraries
 import PropTypes from "prop-types";
-import PokemonImage from "../../atoms/Image/PokemonImage/PokemonImage";
+
+//assets
 import { StyledPokemonCard } from "./styled";
 
+//components
+import PokemonImage from "../../atoms/Image/PokemonImage/PokemonImage";
+
+//this is component for displaying pokemon card which will be used in some areas on the website such as pokemon list page, pokemon detail page, and my pokemon list page
 export default function PokemonCard({
   id,
   image,
   altImg,
   isMyPokemonListPage = false,
-  nickname = null,
+  name = null,
 }) {
   return (
     <StyledPokemonCard>
@@ -19,8 +25,9 @@ export default function PokemonCard({
           altImg={altImg}
         />
         <span className="card__body-id">
+          {/* check if this card is inside my pokemon list page. If it is, display nickname, if not display pokemon id */}
           {isMyPokemonListPage ? (
-            <div>{nickname}</div>
+            <div>{name}</div>
           ) : (
             <div>
               {`#${id.toLocaleString("en-ID", {
@@ -35,10 +42,11 @@ export default function PokemonCard({
   );
 }
 
+//type checking
 PokemonImage.propTypes = {
   id: PropTypes.string,
   image: PropTypes.string.isRequired,
   altImg: PropTypes.string.isRequired,
-  nickname: PropTypes.string,
   isMyPokemonListPage: PropTypes.bool,
+  nickname: PropTypes.string,
 };

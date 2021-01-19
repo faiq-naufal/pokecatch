@@ -1,8 +1,14 @@
-import { StyledNavbar, StyledContainerWrapperNavbar } from "./styled";
+//components
 import NavLink from "../../../components/atoms/Button/NavLink/NavLink";
+
+//assets
 import markerImg from "../../../assets/images/marker.svg";
 import pokebagImg from "../../../assets/images/pokebag.svg";
 
+//styled component with emotion
+import { StyledNavbar, StyledContainerWrapperNavbar } from "./styled";
+
+//this is component for displaying the navbar and nav links
 export default function Navbar() {
   return (
     <StyledNavbar>

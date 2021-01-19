@@ -1,5 +1,7 @@
+//libraries
 import styled from "@emotion/styled";
 
+//styled component with emotion
 export const StyledPokemonCard = styled.div`
   .card__body {
     width: 100%;
@@ -21,9 +23,9 @@ export const StyledPokemonCard = styled.div`
       margin-top: 1.25rem;
       background: #fff;
       border-radius: 20px;
-      padding: 0.25rem 0.75rem;
+      padding: 0.25rem 0.875rem;
       text-align: center;
-      font-size: 1.25rem;
+      font-size: 1.375rem;
       letter-spacing: 0.25px;
       border: none;
       text-transform: capitalize;

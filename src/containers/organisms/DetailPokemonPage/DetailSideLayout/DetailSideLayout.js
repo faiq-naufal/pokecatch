@@ -1,7 +1,13 @@
+//libraries
 import PropTypes from "prop-types";
-import { StyledDetailSideLayout } from "./styled";
-import PokemonCard from "../../../components/molecules/PokemonCard/PokemonCard";
 
+//components
+import PokemonCard from "../../../../components/molecules/PokemonCard/PokemonCard";
+
+//styled component with emotion
+import { StyledDetailSideLayout } from "./styled";
+
+//this is component for side layout (sidebar) at detail pokemon page, this component displays some info about pokemon such as name, id, image, height, and weight
 export default function DetailSideLayout({ pokemon }) {
   return (
     <StyledDetailSideLayout>
@@ -20,6 +26,7 @@ export default function DetailSideLayout({ pokemon }) {
   );
 }
 
+//type checking
 DetailSideLayout.propTypes = {
   pokemon: PropTypes.object,
 };

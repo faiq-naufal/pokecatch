@@ -1,5 +1,7 @@
+//libraries
 import styled from "@emotion/styled";
 
+//styled component with emotion
 export const StyledBackLink = styled.div`
   text-align: center;
 

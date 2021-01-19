@@ -1,5 +1,6 @@
 import styled from "@emotion/styled";
 
+//styled component with emotion
 export const StyledOutlinedLink = styled.a`
   border: solid 4px #000;
   color: #000;

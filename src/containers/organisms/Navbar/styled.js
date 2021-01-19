@@ -1,5 +1,7 @@
+//libraries
 import styled from "@emotion/styled";
 
+//styled component with emotion
 export const StyledNavbar = styled.nav`
   position: fixed;
   bottom: 0;
@@ -90,6 +92,7 @@ export const StyledNavbar = styled.nav`
   }
 `;
 
+//styled component with emotion
 export const StyledContainerWrapperNavbar = styled.div`
   width: 100%;
   margin-left: auto;

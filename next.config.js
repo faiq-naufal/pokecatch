@@ -6,12 +6,14 @@ const withImages = require("next-optimized-images");
 const withPWA = require("next-pwa");
 const runtimeCaching = require("next-pwa/cache");
 
+//config for next.js
 const nextConfig = {
   images: {
     domains: ["raw.githubusercontent.com"],
   },
 };
 
+//export everything composed by next-compose-plugins
 module.exports = withPlugins(
   [
     withImages,

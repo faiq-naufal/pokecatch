@@ -1,17 +1,8 @@
+//libraries
 import { ApolloClient, InMemoryCache } from "@apollo/client";
-import { offsetLimitPagination } from "@apollo/client/utilities";
 
-const cache = new InMemoryCache({
-  typePolicies: {
-    PokemonList: {
-      fields: {
-        results: offsetLimitPagination(),
-      },
-    },
-  },
-});
-
+//initialize and config for apollo client
 export const client = new ApolloClient({
   uri: `https://graphql-pokeapi.vercel.app/api/graphql`,
-  cache: cache,
+  cache: new InMemoryCache(),
 });

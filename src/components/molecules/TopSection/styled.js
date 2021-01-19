@@ -1,5 +1,7 @@
+//libraries
 import styled from "@emotion/styled";
 
+//styled component with emotion
 export const StyledTopSection = styled.div`
   padding: 1.75rem 0;
   text-align: center;

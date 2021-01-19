@@ -1,5 +1,7 @@
+//libraries
 import styled from "@emotion/styled";
 
+//styled component with emotion
 export const StyledPokemonList = styled.div`
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(auto, 240px));
@@ -16,6 +18,7 @@ export const StyledPokemonList = styled.div`
   }
 `;
 
+//styled component with emotion
 export const StyledCardInfo = styled.div`
   width: 100%;
   padding: 1rem 0;
@@ -38,9 +41,17 @@ export const StyledCardInfo = styled.div`
   }
 `;
 
+//styled component with emotion
 export const StyledMyPokemonCardFooter = styled.div`
   text-align: center;
   padding: 1rem 0;
+
+  .card__footer-name {
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin-bottom: 1rem;
+  }
 
   button {
     display: inline-flex;

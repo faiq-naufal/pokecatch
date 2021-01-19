@@ -1,7 +1,11 @@
+//libraries
 import Image from "next/image";
 import PropTypes from "prop-types";
+
+//styled component with emotion
 import { StyledPokemonImage } from "./styled";
 
+//this is component for displaying pokemon image inside circle
 export default function PokemonImage({ image, width, height, altImg }) {
   return (
     <StyledPokemonImage>
@@ -12,6 +16,7 @@ export default function PokemonImage({ image, width, height, altImg }) {
   );
 }
 
+//type checking
 PokemonImage.propTypes = {
   image: PropTypes.string.isRequired,
   width: PropTypes.string.isRequired,

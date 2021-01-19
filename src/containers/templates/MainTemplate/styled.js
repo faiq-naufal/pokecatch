@@ -1,5 +1,7 @@
+//libraries
 import styled from "@emotion/styled";
 
+//styled component with emotion
 export const StyledMainTemplate = styled.div`
   padding-top: 56px;
   padding-bottom: 80px;

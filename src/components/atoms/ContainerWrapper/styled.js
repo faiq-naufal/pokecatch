@@ -1,5 +1,7 @@
+//libraries
 import styled from "@emotion/styled";
 
+//styled component with emotion
 export const StyledContainerWrapper = styled.div`
   width: 100%;
   margin-left: auto;

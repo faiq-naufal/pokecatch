@@ -1,6 +1,10 @@
-import { StyledLoading } from "./styled";
+//assets
 import pokeball from "../../../assets/images/pokeball.svg";
 
+//styled component with emotion
+import { StyledLoading } from "./styled";
+
+//this is component for displaying loading pokeball
 export default function Loading() {
   return (
     <StyledLoading>

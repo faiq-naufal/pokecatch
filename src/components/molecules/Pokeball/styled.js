@@ -1,5 +1,7 @@
+//libraries
 import styled from "@emotion/styled";
 
+//styled component with emotion
 export const StyledPokeball = styled.div`
   display: flex;
   flex-direction: column;
@@ -15,6 +17,7 @@ export const StyledPokeball = styled.div`
     right: 6%;
   }
 
+  //pokeball animation top to down and back to top again
   @keyframes moveUp {
     from {
       transform: translateY(0);

@@ -1,5 +1,7 @@
+//libraries
 import styled from "@emotion/styled";
 
+//styled component with emotion
 export const StyledSolidButton = styled.button`
   border: solid 4px #000;
   background: #c11313;

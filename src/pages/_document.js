@@ -1,5 +1,9 @@
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
+/**
+ * @desc this is custom document.js which next.js provided and updated
+ * with additional elements
+ */
 export default class CustomDocument extends Document {
   static async getInitialProps(ctx) {
     const initialProps = await Document.getInitialProps(ctx);
@@ -10,6 +14,7 @@ export default class CustomDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          {/* all the tags below will be put inside head tag and can be used for seo and pwa */}
           <meta name="application-name" content="PokeCatch" />
           <meta name="apple-mobile-web-app-capable" content="yes" />
           <meta
@@ -55,6 +60,7 @@ export default class CustomDocument extends Document {
           />
           <link rel="shortcut icon" href="/static/icons/favicon.ico" />
         </Head>
+        {/* if javascript disabled return this in browser */}
         <noscript>You need to enable javascript to run this app</noscript>
         <body>
           <Main />

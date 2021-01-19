@@ -1,5 +1,7 @@
+//libraries
 import { gql } from "@apollo/client";
 
+//graphql query for getting all pokemons
 export const GET_POKEMONS = gql`
   query getPokemons($limit: Int, $offset: Int) {
     pokemons(limit: $limit, offset: $offset) {
@@ -15,6 +17,7 @@ export const GET_POKEMONS = gql`
   }
 `;
 
+//graphql query for getting specific pokemon
 export const GET_POKEMON = gql`
   query getPokemon($name: String!) {
     pokemon(name: $name) {

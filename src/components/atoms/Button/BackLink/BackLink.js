@@ -1,7 +1,11 @@
+//libraries
 import Link from "next/link";
-import { StyledBackLink } from "./styled";
 import PropTypes from "prop-types";
 
+//styled component with emotion
+import { StyledBackLink } from "./styled";
+
+//this is component for back to pokemon list link
 export default function BackLink({ href }) {
   return (
     <StyledBackLink>
@@ -12,6 +16,7 @@ export default function BackLink({ href }) {
   );
 }
 
+//type checking
 BackLink.propTypes = {
   href: PropTypes.string,
 };

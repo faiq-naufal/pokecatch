@@ -1,6 +1,8 @@
+//libraries
 import { Global, css } from "@emotion/react";
 import PropTypes from "prop-types";
 
+// global style that applies to every pages
 const GlobalStyle = () => (
   <Global
     styles={css`
@@ -9,32 +11,12 @@ const GlobalStyle = () => (
         padding: 0;
         box-sizing: border-box;
       }
-      html,
-      body,
-      #__next {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-flex: 1;
-        -ms-flex: 1;
-        flex: 1;
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
-        min-height: 100%;
-        min-height: calc(var(--vh, 1vh) * 100);
-        height: auto;
-      }
+
       body {
         font-family: "VT323", "Helvetica Neue", "Arial", "sans-serif";
         background-color: #f6f4f1;
         font-size: 1rem;
         color: #171923;
-      }
-
-      .vt323 {
-        font-family: "VT323", "Helvetica Neue", "Arial", "sans-serif";
       }
 
       #nprogress .bar {
@@ -44,15 +26,18 @@ const GlobalStyle = () => (
   />
 );
 
+//this is theme component that wrap all children components inside it.
 export default function Theme({ children }) {
   return (
     <>
+      {/* this component only set the global style */}
       <GlobalStyle />
       {children}
     </>
   );
 }
 
+//type checking
 Theme.propTypes = {
   children: PropTypes.node,
 };
