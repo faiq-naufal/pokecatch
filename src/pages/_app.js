@@ -1,15 +1,17 @@
-import { useEffect } from "react";
+import { useState, useEffect } from "react";
 import { useRouter } from "next/router";
 import { ApolloProvider } from "@apollo/client";
 import NProgress from "nprogress";
+import { DefaultSeo } from "next-seo";
 import Theme from "../containers/templates/Theme/Theme";
-import { PokemonProvider } from "../hooks/useMyPokemon";
+import { MyPokemonProvider } from "../hooks/useMyPokemon";
 import { client } from "../config/ApolloClient";
 import "../lib/css/nprogress.css";
 import "@fontsource/vt323/400.css";
 
 export default function App({ Component, pageProps }) {
   const router = useRouter();
+  const [URL, setURL] = useState({});
 
   useEffect(() => {
     //NProgress configuration and routing events
@@ -21,6 +23,11 @@ export default function App({ Component, pageProps }) {
     router.events.on("routeChangeComplete", routeChangeComplete);
     router.events.on("routeChangeError", routeChangeComplete);
 
+    const origin = window.location.origin;
+    const fullURL = window.location.href;
+
+    setURL({ origin, fullURL });
+
     return () => {
       router.events.off("routeChangeStart", routeChangeStart);
       router.events.off("routeChangeComplete", routeChangeComplete);
@@ -31,9 +38,25 @@ export default function App({ Component, pageProps }) {
   return (
     <Theme>
       <ApolloProvider client={client}>
-        <PokemonProvider>
+        <MyPokemonProvider>
+          <DefaultSeo
+            description="PokeCatch Website"
+            canonical={URL.fullURL}
+            openGraph={{
+              description: "PokeCatch Website",
+              type: "website",
+              locale: "en-US",
+              url: URL.origin,
+              site_name: "PokeCatch",
+            }}
+            twitter={{
+              handle: "@handle",
+              site: "@site",
+              cardType: "summary_large_image",
+            }}
+          />
           <Component {...pageProps} />
-        </PokemonProvider>
+        </MyPokemonProvider>
       </ApolloProvider>
     </Theme>
   );

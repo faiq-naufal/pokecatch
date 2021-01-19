@@ -1,26 +1,42 @@
 import styled from "@emotion/styled";
 
 export const StyledPokeball = styled.div`
+  display: flex;
+  flex-direction: column;
   position: fixed;
-  bottom: 80px;
-  left: 50%;
+  bottom: 88px;
+  right: 8%;
   max-width: 56px;
   cursor: pointer;
   z-index: 100;
   animation: moveUp 2s infinite alternate;
 
+  @media (min-width: 1024px) {
+    right: 6%;
+  }
+
   @keyframes moveUp {
-    0% {
-      transform: translateX(-50%) translateY(0);
+    from {
+      transform: translateY(0);
     }
-    100% {
-      transform: translateX(-50%) translateY(12px);
+    to {
+      transform: translateY(12px);
     }
   }
 
   @media (min-width: 768px) {
     bottom: 40px;
     max-width: 72px;
+  }
+
+  .pokeball__wrapper {
+    filter: grayscale(1);
+    transition: all 200ms ease-out;
+
+    &:hover {
+      transform: scale(1.1);
+      filter: grayscale(0);
+    }
   }
 
   .pokeball__label {
@@ -37,7 +53,7 @@ export const StyledPokeball = styled.div`
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
   }
 
-  .pokeball__wrapper {
+  .pokeball__image {
     img {
       width: 100%;
       height: auto;

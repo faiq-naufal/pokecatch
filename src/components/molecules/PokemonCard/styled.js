@@ -26,24 +26,7 @@ export const StyledPokemonCard = styled.div`
       font-size: 1.25rem;
       letter-spacing: 0.25px;
       border: none;
+      text-transform: capitalize;
     }
-  }
-
-  .card__footer {
-    width: 100%;
-    padding: 1rem 0;
-  }
-
-  .card__footer-name {
-    font-weight: 700;
-    font-size: 2rem;
-    text-transform: capitalize;
-    margin-bottom: 0.5rem;
-  }
-
-  .card__footer-captured {
-    font-weight: 400;
-    font-size: 1.25rem;
-    letter-spacing: 0.25px;
   }
 `;

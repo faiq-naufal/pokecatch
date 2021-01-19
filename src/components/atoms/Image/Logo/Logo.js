@@ -1,4 +1,4 @@
-import logo from "../../../assets/images/PokeCatch.png";
+import logo from "../../../../assets/images/PokeCatch.png";
 import Link from "next/link";
 import { StyledLogo } from "./styled";
 

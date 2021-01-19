@@ -1,0 +1,25 @@
+{
+  "short_name": "PokeCatch",
+  "name": "PokeCatch Website",
+  "description": "Simple web app about capturing a list of pokemon",
+  "lang": "en",
+  "start_url": "/",
+  "background_color": "#c11313",
+  "display": "standalone",
+  "orientation": "portrait",
+  "theme_color": "#c11313",
+  "icons": [
+    {
+      "src": "/static/icons/android-chrome-192x192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "maskable any"
+    },
+    {
+      "src": "/static/icons/android-chrome-512x512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable any"
+    }
+  ]
+}

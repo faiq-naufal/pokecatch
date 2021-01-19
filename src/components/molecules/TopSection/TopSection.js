@@ -2,11 +2,7 @@ import { StyledTopSection } from "./styled";
 import PropTypes from "prop-types";
 
 export default function TopSection({ children }) {
-  return (
-    <StyledTopSection>
-      <h1>{children}</h1>
-    </StyledTopSection>
-  );
+  return <StyledTopSection>{children}</StyledTopSection>;
 }
 
 TopSection.propTypes = {

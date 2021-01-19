@@ -1,5 +1,5 @@
 import { StyledHeader } from "./styled";
-import Logo from "../../../components/atoms/Logo/Logo";
+import Logo from "../../../components/atoms/Image/Logo/Logo";
 import ContainerWrapper from "../../../components/atoms/ContainerWrapper/ContainerWrapper";
 
 export default function Header() {

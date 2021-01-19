@@ -7,4 +7,5 @@ export default function ContainerWrapper({ children, ...rest }) {
 
 ContainerWrapper.propTypes = {
   children: PropTypes.node,
+  rest: PropTypes.any,
 };

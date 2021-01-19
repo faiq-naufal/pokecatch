@@ -45,10 +45,19 @@ export const StyledNavbar = styled.nav`
     color: #171923;
     text-decoration: none;
 
+    &.active {
+      background: #dadada;
+    }
+
     @media (min-width: 768px) {
       padding: 0.5rem;
       color: #fff;
       font-size: 1.5rem;
+
+      &.active {
+        background: #820d0d;
+      }
+
       &:hover {
         text-decoration: underline;
       }
@@ -78,5 +87,24 @@ export const StyledNavbar = styled.nav`
         display: inline-flex;
       }
     }
+  }
+`;
+
+export const StyledContainerWrapperNavbar = styled.div`
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+
+  @media (min-width: 768px) {
+    padding: 0 16px;
+  }
+
+  @media (min-width: 992px) {
+    padding: 0 20px;
+  }
+
+  @media (min-width: 1200px) {
+    padding: 0 24px;
+    max-width: 1200px;
   }
 `;

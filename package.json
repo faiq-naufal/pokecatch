@@ -1,7 +1,10 @@
 {
-  "name": "tokopedia-restapi-test",
+  "name": "pokecatch",
   "version": "0.1.0",
   "private": true,
+  "author": {
+    "name": "Faiq Naufal"
+  },
   "scripts": {
     "dev": "next dev",
     "build": "next build",
@@ -18,11 +21,13 @@
     "next": "10.0.5",
     "next-compose-plugins": "^2.2.1",
     "next-optimized-images": "^2.6.2",
+    "next-pwa": "^5.0.3",
+    "next-seo": "^4.17.0",
     "nprogress": "^0.2.0",
     "prop-types": "^15.7.2",
     "react": "17.0.1",
     "react-dom": "17.0.1",
-    "react-loading-skeleton": "^2.1.1",
+    "react-hook-form": "^6.14.1",
     "sharp": "^0.27.0",
     "uuid": "^8.3.2"
   },
