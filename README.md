@@ -11,6 +11,14 @@ First, copy the project to your machine
 git clone https://github.com/faiq-naufal/pokecatch.git
 ```
 
+You need to install the dependencies
+
+```
+npm install
+or
+yarn install
+```
+
 And then run the development server:
 
 ```
