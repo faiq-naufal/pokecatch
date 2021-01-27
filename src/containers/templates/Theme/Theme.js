@@ -17,6 +17,7 @@ const GlobalStyle = () => (
         background-color: #f6f4f1;
         font-size: 1rem;
         color: #171923;
+        line-height: 1.2;
       }
 
       #nprogress .bar {

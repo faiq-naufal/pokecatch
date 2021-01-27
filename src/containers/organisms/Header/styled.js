@@ -16,7 +16,7 @@ export const StyledHeader = styled.header`
 
   @media (min-width: 768px) {
     padding: 0.5rem 0;
-    min-height: 80px;
+    min-height: 84px;
   }
 
   .header__body {

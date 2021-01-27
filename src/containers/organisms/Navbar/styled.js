@@ -66,14 +66,14 @@ export const StyledNavbar = styled.nav`
     }
 
     .link__icon {
-      max-width: 30px;
-      max-height: 30px;
+      width: 30px;
+      height: 30px;
       display: inline-flex;
       justify-content: center;
 
       @media (min-width: 768px) {
-        max-width: 36px;
-        max-height: 36px;
+        width: 36px;
+        height: 36px;
       }
 
       img {
@@ -85,6 +85,7 @@ export const StyledNavbar = styled.nav`
     .link__label {
       margin-top: 0.25rem;
       display: flex;
+      line-height: 1.2;
       @media (min-width: 768px) {
         display: inline-flex;
       }
